@@ -1,4 +1,5 @@
-# Maintainer: Brian Bidulock <bidulock@openss7.org>
+# Maintainer: Alex Creio <ctlos@protonmail.com>
+
 pkgname='2bwm'
 pkgver=0.3
 pkgrel=1
