@@ -14,7 +14,7 @@ static const float    resize_keep_aspect_ratio= 1.03;
 /*0)offsetx          1)offsety
  *2)maxwidth         3)maxheight */
 //static const uint8_t offsets[] = {20,20,40,40};
-static const uint8_t offsets[] = {0,16,0,16};
+static const uint8_t offsets[] = {0,22,0,22};
 ///---Colors---///
 /*0)focuscol         1)unfocuscol
  *2)fixedcol         3)unkilcol
@@ -39,7 +39,7 @@ static const uint8_t borders[] = {4,5,5,4};
  * attribute of the window. You can test this using `xprop WM_NAME`
  */
 #define LOOK_INTO "WM_NAME"
-static const char *ignore_names[] = {"bar", "tint2", "xclock","polybar","stalonetray"};
+static const char *ignore_names[] = {"bar", "tint2", "xclock","polybar","stalonetray", "alttab", "picom"};
 ///--Menus and Programs---///
 static const char *menucmd[]   = { "rofi", "-show", "drun", NULL };
 static const char *terminal[]  = { "urxvt", NULL };
@@ -90,7 +90,7 @@ static key keys[] = {
     {  MOD |ALT,          XK_h,          focusnext,         {.i=TWOBWM_FOCUS_PREVIOUS}},
     {  MOD |ALT,          XK_j,          focusnext,         {.i=TWOBWM_FOCUS_PREVIOUS}},
     // Kill a window
-    {  MOD ,              XK_x,          deletewin,         {}},
+    {  MOD ,              XK_z,          deletewin,         {}},
     // Resize a window
     {  MOD |SHIFT,        XK_k,          resizestep,        {.i=TWOBWM_RESIZE_UP}},
     {  MOD |SHIFT,        XK_j,          resizestep,        {.i=TWOBWM_RESIZE_DOWN}},
